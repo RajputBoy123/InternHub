@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!------- Navbar ------->
+    <div class="navbar-container">
+        <nav>
+            <div class="logo">
+                <a href="#"><h2>Portfolio</h2></a>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/sujalrajput_029/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/RajputBoy123"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/sujal-rajput-bb6398281/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </nav>
+    </div>
+
+    <!------- content ------->
+    <div class="content-container">
+        <div class="left move-in-text">
+            <p style="font-size: 30px;">Nice to meet you!</p> <br>
+            <h2 class="name">I'm <br><span style="font-size: 60px;">Sujal Rajput</span></h2> <br>
+            <p class="about" style="font-size: 20px;">
+                Currently pursuing B.tech in Computer Science & Engineering, I am a frontend Developer,aspiring full Stack Development
+                and going deep in DSA and complex problem solving
+            </p>
+        </div>
+        <div class="right">
+            <div class="profile">
+                <img src="profile-image.jpg" alt="Your photo" class="move-in-photo">
+            </div>
+        </div>
+    </div>
+
+    <div class="line"></div>
+
+    <!------- projects -------->
+
+    <div class="projects">
+
+    <div class="card" style="width: 18rem;">
+        <img src="amazon-clone.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Amazon Clone</h5>
+          <p class="card-text">HTML & CSS</p>
+          <a href="#" class="btn btn-primary">View More</a>
+        </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+        <img src="amazon-clone.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Amazon Clone</h5>
+          <p class="card-text">HTML & CSS</p>
+          <a href="#" class="btn btn-primary">View More</a>
+        </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+        <img src="amazon-clone.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Amazon Clone</h5>
+          <p class="card-text">HTML & CSS</p>
+          <a href="#" class="btn btn-primary">View More</a>
+        </div>
+    </div>
+
+    </div>
+
+    <div class="line second-line"></div>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>If you have any questions, project ideas, or just want to say hello, feel free to get in touch!</p>
+    
+        <div class="contact-container">
+            <!-- Left Column: Contact Info -->
+            <div class="contact-info">
+                <p><i class="fa-solid fa-envelope"></i> Email: <a href="mailto:sujalrajput2905@gmail.com">sujalrajput2905@gmail.com</a></p>
+                <p><i class="fa-solid fa-phone"></i> Phone: +91 8368556383</p>
+                <p><i class="fa-solid fa-location-dot"></i> Location: Ghaziabad, Uttar Pradesh, India</p>
+    
+                <!-- Social Media -->
+                <div class="social-icons">
+                    <a href="https://github.com/RajputBoy123"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/sujal-rajput-bb6398281/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/sujalrajput_029/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+    
+            <!-- Right Column: Contact Form -->
+            <form action="https://formspree.io/f/mdkodlnk" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="text" name="subject" placeholder="Subject">
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+    
+</body>
+</html>

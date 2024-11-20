@@ -1,0 +1,394 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  background-color: rgb(5, 3, 14);
+  overflow-x: hidden;
+}
+
+.line {
+  width: 80%; 
+  height: 4px; 
+  background-color: #00FF9C; 
+  margin: 20px auto; 
+  border-radius: 10px; 
+  position: relative;
+  top: -15px;
+  gap: 20px;
+}
+
+.second-line {
+  margin-top: 50px;
+}
+
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+span {
+  position: relative;
+}
+
+span::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 3px; 
+  background-color: #00FF9C; 
+  position: absolute;
+  bottom: -10px; 
+  left: 0;
+}
+
+/* Navbar */
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+i:hover {
+  transform: scale(1.2);
+  transition: transform 0.2 ease;
+}
+
+.social-icons a:hover .fa-square-instagram {
+  color: #E1306C; 
+}
+a:hover .fa-instagram {
+  color:#E1306C;
+}
+
+.social-icons a:hover .fa-github {
+  color: #333; 
+}
+
+.social-icons a:hover .fa-linkedin {
+  color: #0077B5; 
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  padding: 2rem 0;
+}
+
+nav .logo {
+  font-size: 1.4rem;
+}
+
+nav .social-icons {
+  font-size: 1.7rem;
+  padding-left: 15px;
+}
+
+/* content */
+
+
+.content-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  margin-top: 20px;
+  padding: 20px;
+  gap: 20px;
+  padding-left: 200px;
+  padding-right: 250px;
+}
+
+.left {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 45%;
+}
+
+.right {
+  width: 45%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right img {
+  width: 80%;
+  border-radius: 10px;
+  object-fit: cover;
+  height: 450px;
+  background-size: contain;
+  object-position: top;
+  margin: 0 0 0 200px;
+} 
+
+.right {
+  transform:
+    rotate3d(.5,-.866,0,15deg)
+    rotate(1deg);
+  box-shadow:
+    2em 4em 6em -2em rgba(0,0,0,.5),
+    1em 2em 3.5em -2.5em rgba(0,0,0,.5);
+  transition:
+    transform .4s ease,
+    box-shadow .4s ease;
+  border-radius: .5em;
+}    
+
+.right:hover {
+  transform:
+  rotate3d(0,0,0,0deg)
+  rotate(0deg);
+}
+
+/* Move-in animation for the left text */
+.move-in-text {
+  transform: translateX(-100vw); 
+  opacity: 0; 
+  animation: slideInText 1.5s ease-out forwards;
+}
+
+/* Move-in animation for the photo */
+.move-in-photo {
+  transform: translateX(100vw); 
+  opacity: 0; 
+  animation: slideInPhoto 1.5s ease-out forwards;
+}
+
+/* Keyframes for the text */
+@keyframes slideInText {
+0% {
+    transform: translateX(-100vw); 
+    opacity: 0; 
+}
+100% {
+    transform: translateX(0); 
+    opacity: 1; 
+}
+}
+
+/* Keyframes for the photo */
+@keyframes slideInPhoto {
+0% {
+    transform: translateX(100vw); /* Start far outside the viewport */
+    opacity: 0; /* Invisible */
+}
+100% {
+    transform: translateX(0); /* Move to original position */
+    opacity: 1; /* Fully visible */
+}
+}
+ 
+/* projects */
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-bottom: 30px;
+  gap: 20px;
+}
+
+.card {
+  background-color: #121212; 
+  color: white;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0, 255, 156, 0.4);
+  overflow: hidden; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  margin-left: 155px;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 6px 20px rgba(0, 255, 156, 0.6);
+}
+
+.card-img-top {
+  width: 100%;
+  height: 200px; /* Consistent height */
+  object-fit: cover; /* Maintains image proportions */
+  border-bottom: 2px solid #00FF9C; /* Adds a separator below the image */
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.card-text {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.btn {
+  display: inline-block;
+  background-color: #00FF9C;
+  color: #121212;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border-radius: 25px;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #00cc80;
+  transform: scale(1.05);
+}
+
+/* contact us */
+
+#contact {
+  text-align: center;
+  padding: 50px 20px;
+  color: white;
+  background-color: #121212;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+/* Left Column */
+.contact-info {
+  flex: 1;
+  min-width: 300px;
+  text-align: left;
+}
+
+.contact-info p {
+  margin: 10px 0;
+}
+
+.contact-info a {
+  color: #00FF9C;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Social Icons */
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  margin-right: 10px;
+  font-size: 1.5rem;
+  color: white;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #00FF9C;
+}
+
+/* Right Column */
+form {
+  flex: 1;
+  min-width: 300px;
+  background: #1c1c1c;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+form button {
+  width: 100%;
+  background-color: #00FF9C;
+  color: #121212;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #00cc80;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+  nav {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .content-container {
+      padding: 0;
+  }
+
+  .left, .right {
+      width: 90%;
+      padding: 0 20px;
+      margin-bottom: 20px;
+  }
+
+  .right img {
+      margin: 0;
+  }
+
+  .card {
+      margin: 20px auto; 
+  }
+
+  .contact-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .contact-info, form {
+      width: 90%;
+      margin-bottom: 20px;
+  }
+
+  .social-icons {
+      justify-content: center;
+  }
+}
